@@ -20,7 +20,7 @@ export default function RootLayout({ children }) {
       <body className={font.className} suppressHydrationWarning={true}>
         
         {children}
-      <Footer/>
+      {/* <Footer/> */}
       <SpeedInsights/>
       </body>
       </ClerkProvider>
