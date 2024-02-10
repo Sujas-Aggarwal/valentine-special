@@ -11,7 +11,9 @@ async function Account() {
     .from("results")
     .select("*")
     .eq("id", auth().userId);
-  const url = `https://valentine-special-blond.vercel.app/valentine/${auth().userId.slice(5)}`;
+  const url = `https://valentine-special-blond.vercel.app/valentine/${auth().userId.slice(
+    5
+  )}`;
   const result = data[0];
   return (
     <div className="w-full min-h-screen flex flex-col justify-center items-center">
@@ -20,21 +22,21 @@ async function Account() {
           Forever Together
         </Link>
         <div className="flex gap-5 justify-center items-center">
-          <Refresh/>
+          <Refresh />
           <UserButton afterSignOutUrl="/" />
-          <a target="_blank" href={"https://github.com/Sujas-Aggarwal"}><img src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png" className="w-[32px] rounded-full mr-2" /></a>
+          <a target="_blank" href={"https://github.com/Sujas-Aggarwal"}>
+          </a>
         </div>
       </header>
-      <div className="h-[10vh]">
-
-      </div>
+      <div className="h-[10vh]"></div>
       {typeof result != "undefined" ? (
         <>
           <h1 className="text-center text-xs">
             Proposal Created on &nbsp;
             {result.created_at.split("T")[0] +
               " " +
-              result.created_at.split("T")[1].slice(0, 8)}&nbsp;
+              result.created_at.split("T")[1].slice(0, 8)}
+            &nbsp;
           </h1>
           <div className="flex mb-[3vh] flex-wrap w-full justify-center items-center text-sm gap-1 my-2">
             <input
@@ -44,7 +46,6 @@ async function Account() {
               value={url}
             />
             <Copy words={url} />
-            
           </div>
           {result.results.length > 0 ? (
             <table className="sm:w-[80%] w-[95%] text-center border border-white text-sm">

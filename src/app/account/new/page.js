@@ -21,7 +21,6 @@ async function New() {
         </Link>
         <div className="flex gap-5 justify-center items-center">
           <UserButton afterSignOutUrl="/" />
-          <a target="_blank" href={"https://github.com/Sujas-Aggarwal"}><img src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png" className="w-[32px] rounded-full mr-2" /></a>
         </div>
       </header>
       <div className="flex flex-col justify-center gap-2 items-center w-full h-screen text-left">
