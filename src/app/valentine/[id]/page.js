@@ -4,6 +4,7 @@ import requests from "@/data/requests";
 import { useParams } from "next/navigation";
 import { useRouter } from "next/navigation";
 const Proposal = () => {
+  const [loading, setLoading] = useState(false)
   const router = useRouter();
   const id = useParams().id;
   const [no, setNo] = useState(0);
@@ -12,6 +13,7 @@ const Proposal = () => {
   };
   async function yesHandler() {
     const name = prompt("Enter your name");
+    setLoading(true)
     const res = await fetch(`/api/data`, {
       method: "POST",
       body: JSON.stringify({ id: id, num: no, name: name }),
@@ -44,10 +46,11 @@ const Proposal = () => {
         <div className="flex justify-center">
           <button
             onClick={yesHandler}
+            disabled={loading}
             style={{ scale: 1 + no * 0.1 }}
             className="bg-green-500  hover:bg-green-700 text-white font-bold select-none py-2 px-8 rounded mr-4"
           >
-            Yes
+           {loading?"Sending...":"Yes"}
           </button>
           <button
             className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-8 select-none rounded"
