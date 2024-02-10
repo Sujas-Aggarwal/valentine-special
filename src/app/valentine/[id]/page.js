@@ -35,7 +35,7 @@ const Proposal = () => {
   return (
     <div className="bg-gray-100 min-h-screen flex items-center justify-center">
       <div className="text-center flex flex-col justify-center items-center">
-        <h1 className="text-2xl text-pink-600 font-bold mb-6 max-w-[80%] text-center flex ">
+        <h1 className="text-xl text-pink-600 font-bold mb-6 max-w-[80%] text-center flex ">
           {requests[Math.min(no, requests.length - 1)]}
         </h1>
         <img
