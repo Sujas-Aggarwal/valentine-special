@@ -49,7 +49,8 @@ async function Account() {
                   <td>Name</td>
                   <td>Date</td>
                   <td>Time</td>
-                  <td>Clicked 'No'</td>
+                  <td>Clicked "No"
+                  </td>
                 </tr>
               </thead>
               <tbody className="[&>*:nth-child(even)]:text-[#f63555] [&>*:nth-child(even)]:bg-white">
