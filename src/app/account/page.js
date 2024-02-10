@@ -70,7 +70,7 @@ async function Account() {
           )}
           <Link
             href={"/account/delete"}
-            className="bg-white min-w-[30%] mt-2 px-3 text-center hover:min-w-[40%] py-2 sm:px-6 sm:py-3 duration-150 transition-all text-[#f63555] rounded-lg font-bold"
+            className="bg-white mb-[10vh] min-w-[30%] mt-2 px-3 text-center hover:min-w-[40%] py-2 sm:px-6 sm:py-3 duration-150 transition-all text-[#f63555] rounded-lg font-bold"
           >
             Delete Proposal
           </Link>

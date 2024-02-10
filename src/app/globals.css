@@ -13,3 +13,7 @@ body{
 button:active{
   background: rgb(213, 207, 207);
 }
+
+html{
+  overflow-x: hidden;
+}
