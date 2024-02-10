@@ -17,7 +17,7 @@ async function New() {
       <div>
       <input type="text" className='text-black max-w-[95%] p-2 rounded-sm outline-none border-none selection:bg-[#ff516e] selection:text-white' readOnly value={url} />
         <Copy words = {url}/>
-        <a target='_blank' href={url}><img className='w-6 m-1' src="https://cdn-icons-png.flaticon.com/512/7268/7268615.png" /></a>
+        // <a target='_blank' href={url}><img className='w-6 m-1' src="https://cdn-icons-png.flaticon.com/512/7268/7268615.png" /></a>
         </div>
     </div>
   )
