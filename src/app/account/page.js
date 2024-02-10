@@ -10,9 +10,7 @@ async function Account() {
     .from("results")
     .select("*")
     .eq("id", auth().userId);
-  const url = `${
-    process.env.VERCEL_URL || "http://localhost:3000"
-  }/valentine/${auth().userId.slice(5)}`;
+  const url = `https://valentine-special-blond.vercel.app/valentine/${auth().userId.slice(5)}`;
   const result = data[0];
   return (
     <div className="w-full min-h-screen flex flex-col justify-center items-center">
@@ -26,26 +24,20 @@ async function Account() {
       </header>
       {typeof result != "undefined" ? (
         <>
-          <h1 className="text-center">
+          <h1 className="text-center text-xs">
             Proposal Created on &nbsp;
             {result.created_at.split("T")[0] +
               " " +
               result.created_at.split("T")[1].slice(0, 8)}&nbsp;
           </h1>
-          <div className="flex flex-wrap justify-center items-center gap-1 my-2">
+          <div className="flex flex-wrap w-full justify-center items-center text-sm gap-1 my-2">
             <input
               type="text"
-              className="text-black max-w-[95%] p-2 rounded-sm outline-none border-none selection:bg-[#ff516e] selection:text-white"
+              className="text-black w-[400px] max-w-[95vw] p-1 sm:p-2 rounded-sm outline-none border-none selection:bg-[#ff516e] selection:text-white"
               readOnly
               value={url}
             />
             <Copy words={url} />
-            // <a target="_blank" href={url}>
-            //   <img
-            //     className="w-6 m-1"
-            //     src="https://cdn-icons-png.flaticon.com/512/7268/7268615.png"
-            //   />
-            // </a>
           </div>
           {result.results.length > 0 ? (
             <table className="sm:w-[80%] w-[95%] text-center border border-white text-sm">
@@ -71,12 +63,12 @@ async function Account() {
           ) : (
             <div className="flex flex-col gap-1 justify-center items-center">
               <h1 className="font-bold text-2xl ">No Responses Yet</h1>
-              <h2>Share Your URL to your loved ones</h2>
+              <h2 className="text-center">Share Your URL to your loved ones</h2>
             </div>
           )}
           <Link
             href={"/account/delete"}
-            className="bg-white min-w-[30%] mt-2 text-center hover:min-w-[40%] py-2 sm:px-6 sm:py-3 duration-150 transition-all text-[#f63555] rounded-lg font-bold"
+            className="bg-white min-w-[30%] mt-2 px-3 text-center hover:min-w-[40%] py-2 sm:px-6 sm:py-3 duration-150 transition-all text-[#f63555] rounded-lg font-bold"
           >
             Delete Proposal
           </Link>

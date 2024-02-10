@@ -14,7 +14,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <ClerkProvider>
-      <body className={font.className}>
+      <body className={font.className} suppressHydrationWarning={true}>
         
         {children}
       <Footer/>
