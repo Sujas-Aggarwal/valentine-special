@@ -27,21 +27,26 @@ async function Account() {
       {typeof result != "undefined" ? (
         <>
           <h1 className="text-center">
-            Proposal Created on{" "}
+            Proposal Created on &nbsp;
             {result.created_at.split("T")[0] +
               " " +
-              result.created_at.split("T")[1].slice(0, 8)}{" "}
+              result.created_at.split("T")[1].slice(0, 8)}&nbsp;
           </h1>
           <div className="flex flex-wrap justify-center items-center gap-1 my-2">
-        <input
-          type="text"
-          className="text-black max-w-[95%] p-2 rounded-sm outline-none border-none selection:bg-[#ff516e] selection:text-white"
-          readOnly
-          value={url}
-        />
-        <Copy words={url} />
-        <a target="_blank" href={url}><img className="w-6 m-1" src="https://cdn-icons-png.flaticon.com/512/7268/7268615.png" /></a>
-      </div>
+            <input
+              type="text"
+              className="text-black max-w-[95%] p-2 rounded-sm outline-none border-none selection:bg-[#ff516e] selection:text-white"
+              readOnly
+              value={url}
+            />
+            <Copy words={url} />
+            <a target="_blank" href={url}>
+              <img
+                className="w-6 m-1"
+                src="https://cdn-icons-png.flaticon.com/512/7268/7268615.png"
+              />
+            </a>
+          </div>
           {result.results.length > 0 ? (
             <table className="sm:w-[80%] w-[95%] text-center border border-white text-sm">
               <thead className="bg-white text-[#f63555] h-10 ">
@@ -49,8 +54,7 @@ async function Account() {
                   <td>Name</td>
                   <td>Date</td>
                   <td>Time</td>
-                  <td>Clicked NO
-                  </td>
+                  <td>Clicked NO</td>
                 </tr>
               </thead>
               <tbody className="[&>*:nth-child(even)]:text-[#f63555] [&>*:nth-child(even)]:bg-white">
@@ -70,12 +74,12 @@ async function Account() {
               <h2>Share Your URL to your loved ones</h2>
             </div>
           )}
-            <Link
-              href={"/account/delete"}
-              className="bg-white min-w-[30%] mt-2 text-center hover:min-w-[40%] py-2 sm:px-6 sm:py-3 duration-150 transition-all text-[#f63555] rounded-lg font-bold"
-            >
-              Delete Proposal
-            </Link>
+          <Link
+            href={"/account/delete"}
+            className="bg-white min-w-[30%] mt-2 text-center hover:min-w-[40%] py-2 sm:px-6 sm:py-3 duration-150 transition-all text-[#f63555] rounded-lg font-bold"
+          >
+            Delete Proposal
+          </Link>
         </>
       ) : (
         <>
@@ -90,7 +94,6 @@ async function Account() {
           </div>
         </>
       )}
-
     </div>
   );
 }
