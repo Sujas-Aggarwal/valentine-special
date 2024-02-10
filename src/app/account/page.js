@@ -49,7 +49,7 @@ async function Account() {
                   <td>Name</td>
                   <td>Date</td>
                   <td>Time</td>
-                  <td>Clicked "No"
+                  <td>Clicked NO
                   </td>
                 </tr>
               </thead>
