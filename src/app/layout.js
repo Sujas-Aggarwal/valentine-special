@@ -18,9 +18,9 @@ export default function RootLayout({ children }) {
         
         {children}
       <Footer/>
+      <SpeedInsights/>
       </body>
       </ClerkProvider>
-      <SpeedInsights/>
 
     </html>
   );
