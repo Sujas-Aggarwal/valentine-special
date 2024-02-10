@@ -4,6 +4,7 @@ import { UserButton, auth } from "@clerk/nextjs";
 import Link from "next/link";
 import React from "react";
 import Copy from "./new/copy";
+import Refresh from "@/components/Refresh";
 
 async function Account() {
   const { data, error } = await supabase
@@ -18,7 +19,8 @@ async function Account() {
         <Link className="font-bold text-xl" href={"/"}>
           Forever Together
         </Link>
-        <div>
+        <div className="flex gap-5 justify-center items-center">
+          <Refresh/>
           <UserButton afterSignOutUrl="/" />
         </div>
       </header>
@@ -45,7 +47,7 @@ async function Account() {
                 <tr className="font-bold">
                   <td>Name</td>
                   <td>Date</td>
-                  <td>Time</td>
+                  <td>Time {"[GMT]"}</td>
                   <td>Clicked NO</td>
                 </tr>
               </thead>

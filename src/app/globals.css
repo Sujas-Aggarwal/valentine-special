@@ -10,3 +10,6 @@ body{
   background-color: #f63555;
   color: white;
 }
+button:active{
+  background: rgb(213, 207, 207);
+}

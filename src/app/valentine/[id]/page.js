@@ -21,12 +21,14 @@ const Proposal = () => {
         "Content-Type": "application/json",
       },
     })
+    try{
     const data  = await res.json()
     if (data.message === "success") {
       router.push(`/valentine/${id}/success`);
-    }
-    else{
+    }}
+    catch{
       alert("There was an error")
+
     }
   }
 
@@ -45,7 +47,7 @@ const Proposal = () => {
           <button
             onClick={yesHandler}
             style={{ scale: 1 + no * 0.1 }}
-            className="bg-green-500 hover:bg-green-700 text-white font-bold select-none py-2 px-8 rounded mr-4"
+            className="bg-green-500  hover:bg-green-700 text-white font-bold select-none py-2 px-8 rounded mr-4"
           >
             Yes
           </button>
