@@ -54,7 +54,7 @@ async function Account() {
               <tbody className="[&>*:nth-child(even)]:text-[#f63555] [&>*:nth-child(even)]:bg-white">
                 {result.results.map((res) => (
                   <tr key={res.time} className="h-[40px]">
-                    <td className="font-bold">{res.name}</td>
+                    <td className="font-bold">{res.name || "Anonymous"}</td>
                     <td>{res.time.toString().split("T")[0]}</td>
                     <td>{res.time.toString().split("T")[1].slice(0, 8)}</td>
                     <td>{res.clicks}</td>
