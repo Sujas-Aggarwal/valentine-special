@@ -12,6 +12,8 @@ const Proposal = () => {
   };
   async function yesHandler() {
     const name = prompt("Enter your name");
+    if (name==""){
+      return}
     const res = await fetch(`/api/data`, {
       method: "POST",
       body: JSON.stringify({ id: id, num: no, name: name }),
