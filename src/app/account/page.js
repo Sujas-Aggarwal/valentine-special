@@ -22,6 +22,7 @@ async function Account() {
         <div className="flex gap-5 justify-center items-center">
           <Refresh/>
           <UserButton afterSignOutUrl="/" />
+          <a target="_blank" href={"https://github.com/Sujas-Aggarwal"}><img src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png" className="w-[32px] rounded-full mr-2" /></a>
         </div>
       </header>
       <div className="h-[10vh]">
