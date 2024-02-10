@@ -1,0 +1,23 @@
+const requests = [
+    "Will You Be My Valentines?",
+    "I've been enchanted by your presence, and I can't help but yearn for more moments together. Would you grace me with your company over a candlelit dinner?",
+    "In the midst of our conversations, I've found a connection that I can't ignore. Would you join me for an evening under the stars, where we can share stories and laughter?",
+    "There's a quaint little bistro I've been dreaming of taking you to. Let's escape for an evening together, where every glance and touch feels like poetry.",
+    "The thought of sharing a movie night with you, snuggled close and lost in each other's company, fills me with warmth. Will you be my co-star for the evening?",
+    "I've discovered a hidden gem of an activity that I believe would be even more magical with your presence. Let's create memories together, surrounded by the glow of our connection.",
+    "The world feels brighter when you're by my side, and I long to explore its wonders with you. Shall we embark on an adventure, hand in hand, lost in each other's gaze?",
+    "The melody of your laughter echoes in my mind, and I find myself craving more of those harmonious moments. Would you share a meal with me, where every bite tastes sweeter with you?",
+    "In the quiet moments of solitude, my thoughts drift to you, and I imagine the depth of our connection growing with every shared experience. Will you join me in weaving our love story further?",
+    "Your passion for art ignites a fire within me, and I'm eager to explore it together, discovering new layers of intimacy with each shared moment. Will you indulge me?",
+    "As the stars paint the night sky with their brilliance, I envision us enveloped in the magic of our connection, creating memories that will linger in our hearts forever. Will you join me in crafting these moments together?",
+    "With every beat of my heart, I find myself falling deeper in love with you. Will you make me the happiest man alive and date me?",
+    "From the moment I met you, I knew you were the one I wanted to spend the rest of my days with. Will you date me and make my dreams come true?",
+    "In your eyes, I see my future, filled with love, joy, and endless possibilities. Will you take this journey with me?",
+    "You've captured my heart in a way I never thought possible. Will you do me the honor of becoming my partner and sharing a lifetime of love and happiness?",
+    "With you, I've found my home, my safe haven. Will you date me and let me spend the rest of my days making you happy?",
+    "Life with you is a beautiful adventure, and I want nothing more than to continue this journey with you as my partner for life. Will you date me?",
+    "You are my sunshine on the darkest days, my strength when I'm weak. Will you make me the luckiest man alive by saying yes to forever with me?",
+    "With you, I've found my missing piece, my soulmate. Will you date me and complete my life in ways I never thought possible?",
+    "I can't imagine a future without you in it. Will you do me the honor of being my partner and allowing me to cherish and adore you for all eternity?",
+  ];
+export default requests;
