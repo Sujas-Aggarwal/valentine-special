@@ -44,6 +44,7 @@ async function Account() {
               value={url}
             />
             <Copy words={url} />
+            
           </div>
           {result.results.length > 0 ? (
             <table className="sm:w-[80%] w-[95%] text-center border border-white text-sm">
