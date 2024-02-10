@@ -54,7 +54,7 @@ async function Account() {
                   <td>Name</td>
                   <td>Date</td>
                   <td>Time {"[GMT]"}</td>
-                  <td>Clicked NO</td>
+                  <td>Liking Probability</td>
                 </tr>
               </thead>
               <tbody className="[&>*:nth-child(even)]:text-[#f63555] [&>*:nth-child(even)]:bg-white">
@@ -63,7 +63,7 @@ async function Account() {
                     <td className="font-bold">{res.name || "Anonymous"}</td>
                     <td>{res.time.toString().split("T")[0]}</td>
                     <td>{res.time.toString().split("T")[1].slice(0, 8)}</td>
-                    <td>{res.clicks}</td>
+                    <td>{Math.round((1-res.clicks/22)*100)}%</td>
                   </tr>
                 ))}
               </tbody>
