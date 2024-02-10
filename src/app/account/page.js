@@ -36,7 +36,7 @@ async function Account() {
               " " +
               result.created_at.split("T")[1].slice(0, 8)}&nbsp;
           </h1>
-          <div className="flex flex-wrap w-full justify-center items-center text-sm gap-1 my-2">
+          <div className="flex mb-[3vh] flex-wrap w-full justify-center items-center text-sm gap-1 my-2">
             <input
               type="text"
               className="text-black w-[400px] max-w-[95vw] p-1 sm:p-2 rounded-sm outline-none border-none selection:bg-[#ff516e] selection:text-white"
@@ -74,7 +74,7 @@ async function Account() {
           )}
           <Link
             href={"/account/delete"}
-            className="bg-white mb-[10vh] min-w-[30%] mt-2 px-3 text-center hover:min-w-[40%] py-2 sm:px-6 sm:py-3 duration-150 transition-all text-[#f63555] rounded-lg font-bold"
+            className="bg-white my-[3vh] min-w-[30%]  px-3 text-center hover:min-w-[40%] py-2 sm:px-6 sm:py-3 duration-150 transition-all text-[#f63555] rounded-lg font-bold"
           >
             Delete Proposal
           </Link>
