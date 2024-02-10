@@ -40,7 +40,7 @@ async function Account() {
           value={url}
         />
         <Copy words={url} />
-        <a target='_blank' href={url}><img className='w-6 m-1' src="https://cdn-icons-png.flaticon.com/512/7268/7268615.png" /></a>
+        <a target="_blank" href={url}><img className="w-6 m-1" src="https://cdn-icons-png.flaticon.com/512/7268/7268615.png" /></a>
       </div>
           {result.results.length > 0 ? (
             <table className="sm:w-[80%] w-[95%] text-center border border-white text-sm">
